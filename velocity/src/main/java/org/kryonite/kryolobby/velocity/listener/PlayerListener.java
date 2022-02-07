@@ -16,11 +16,11 @@ public class PlayerListener {
 
   protected static final String LOBBY_PREFIX = "lobby-";
 
-  private final ProxyServer server;
+  private final ProxyServer proxyServer;
 
   @Subscribe
   public void onChooseInitialServer(PlayerChooseInitialServerEvent event) {
-    Optional<RegisteredServer> registeredServer = this.server.getAllServers().stream()
+    Optional<RegisteredServer> registeredServer = proxyServer.getAllServers().stream()
         .filter(server -> server.getServerInfo().getName().startsWith(LOBBY_PREFIX))
         .min(Comparator.comparingInt(server -> server.getPlayersConnected().size()));
 
