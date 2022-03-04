@@ -8,5 +8,5 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:$paperVersion")
 
     testImplementation("io.papermc.paper:paper-api:$paperVersion")
-    testImplementation("org.awaitility:awaitility:4.1.1")
+    testImplementation("org.awaitility:awaitility:4.2.0")
 }
