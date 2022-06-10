@@ -3,7 +3,7 @@ repositories {
 }
 
 dependencies {
-    val paperVersion = "1.18.2-R0.1-SNAPSHOT"
+    val paperVersion = "1.19-R0.1-SNAPSHOT"
 
     compileOnly("io.papermc.paper:paper-api:$paperVersion")
 
